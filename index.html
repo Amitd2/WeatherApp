@@ -10,7 +10,7 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <button><img src="search.png"></button>
         </div>
         <div class="error">
             <p>Invalid City Name</p>
@@ -20,14 +20,14 @@
             <h1 class="temp" class="temp"></h1>
             <h2 class="city" class="city"></h2>
             <div class="details" class="col">
-                <img src="images/humidity.png">
+                <img src="humidity.png">
                 <div>
                     <p class="humidity"></p>
                     <p>Humidity</p>
                 </div>
             </div>
             <div class="details" class="col">
-                <img src="images/wind.png">
+                <img src="wind.png">
                 <div>
                     <p class="wind"></p>
                     <p>Wind Speed</p>
@@ -54,15 +54,15 @@
                 document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
                 document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
                 const weatherDetails = {
-                    ["Clouds"]: {src: "images/clouds.png"},
-                    ["Clear"]: {src: "images/clear.png"},
-                    ["Haze"]: {src: "images/clear.png"},
-                    ["Rain"]: {src: "images/rain.png"},
-                    ["Mist"]: {src: "images/mist.png"},
-                    ["Drizzle"]: {src: "images/drizzle.png"},
-                    ["Humidity"]: {src: "images/humidity.png"},
-                    ["Snow"]: {src: "images/snow.png"},
-                    ["Wind"]: {src: "images/wind.png"}
+                    ["Clouds"]: {src: "clouds.png"},
+                    ["Clear"]: {src: "clear.png"},
+                    ["Haze"]: {src: "clear.png"},
+                    ["Rain"]: {src: "rain.png"},
+                    ["Mist"]: {src: "mist.png"},
+                    ["Drizzle"]: {src: "drizzle.png"},
+                    ["Humidity"]: {src: "humidity.png"},
+                    ["Snow"]: {src: "snow.png"},
+                    ["Wind"]: {src: "wind.png"}
 
                 };
                 weatherIcon.src = weatherDetails[data.weather[0].main].src;
